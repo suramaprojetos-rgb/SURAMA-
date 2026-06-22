@@ -8,71 +8,52 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#f3efe7;
-font-family:Arial,sans-serif;
+    background:#f3efe7;
+    font-family:Arial, sans-serif;
+    text-align:center;
 }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-max-width:1200px;
-margin:auto;
-}
-
-.grid img{
-width:100%;
-height:100%;
-display:block;
-object-fit:cover;
+.banner{
+    width:95%;
+    max-width:900px;
+    display:block;
+    margin:30px auto;
+    box-shadow:0 0 20px rgba(0,0,0,.20);
 }
 
 .contato{
-background:#082447;
-color:white;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:40px;
-text-align:center;
+    background:#082447;
+    color:white;
+    padding:40px 20px;
 }
 
 .contato h2{
-margin-bottom:20px;
-font-size:2rem;
+    margin-bottom:20px;
 }
 
 .contato p{
-margin:8px 0;
+    margin:8px 0;
 }
 
 .botao{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#d1b05f;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#d1b05f;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
 }
 
 .botao:hover{
-opacity:.9;
-}
-
-@media(max-width:768px){
-
-.grid{
-grid-template-columns:1fr;
-}
-
+    opacity:.9;
 }
 
 </style>
@@ -80,26 +61,14 @@ grid-template-columns:1fr;
 
 <body>
 
-<div class="grid">
-
-<img src="logo-surama.png" alt="Surama">
-
-<img src="fachada-surama.png" alt="Fachada">
-
-<img src="logo-quem-somos.png" alt="Quem Somos">
-
-<img src="porta-surama.png" alt="Porta">
-
-<img src="logo-nossas-solucoes.png" alt="Nossas Soluções">
+<img src="banner-surama.png" class="banner" alt="SURAMA">
 
 <div class="contato">
 
 <h2>Solicite um orçamento</h2>
 
 <p>WhatsApp: (11) 98926-5280</p>
-
 <p>Instagram: @surama_projetos</p>
-
 <p>E-mail: suramaprojetos@gmail.com</p>
 
 <a class="botao"
@@ -107,8 +76,6 @@ href="https://wa.me/5511989265280"
 target="_blank">
 Falar no WhatsApp
 </a>
-
-</div>
 
 </div>
 
