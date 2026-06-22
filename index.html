@@ -1,262 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SURAMA Arquitetura e Alumínio</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#f4f4f4;
-color:#333;
-line-height:1.6;
-}
-
-/* HERO */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#333;line-height:1.6}
+html{scroll-behavior:smooth}
 
 header{
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
 url('WhatsApp Image 2026-06-08 at 09.30.35.jpeg');
-
 background-size:cover;
 background-position:center;
-min-height:100vh;
-
+min-height:70vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-}
-
-.hero{
-max-width:1000px;
-color:white;
+color:#fff;
 }
 
 .logo{
 width:320px;
 max-width:90%;
-background:white;
+background:#fff;
 padding:15px;
 border-radius:12px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
-.hero h1{
-font-size:3rem;
-margin-bottom:15px;
-}
+.hero{max-width:900px}
 
-.subtitulo{
-font-size:1.8rem;
-font-weight:bold;
-margin-bottom:20px;
-}
+.hero p{font-size:1.2rem}
 
-.destaque{
-font-size:1.2rem;
-margin-bottom:35px;
-}
+section{padding:80px 20px;max-width:1200px;margin:auto}
 
-.botao{
-display:inline-block;
-background:#c9a227;
-color:white;
-padding:15px 35px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:.3s;
-}
-
-.botao:hover{
-background:#b18f21;
-}
-
-/* SOBRE */
+h2{text-align:center;font-size:2.3rem;margin-bottom:30px}
 
 .sobre{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-text-align:center;
-}
-
-.sobre h2{
-font-size:2.5rem;
-margin-bottom:30px;
-}
-
-.sobre p{
-font-size:1.1rem;
 max-width:900px;
 margin:auto;
+text-align:center;
+font-size:1.1rem;
 }
-
-/* SERVIÇOS */
 
 .servicos-area{
 background:#050505;
-padding:80px 20px;
-}
-
-.servicos-area h2{
-text-align:center;
-color:white;
-font-size:2.5rem;
-margin-bottom:50px;
+color:#fff;
 }
 
 .servicos{
-max-width:1200px;
-margin:auto;
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
-background:#0a0a0a;
+background:#111;
+padding:25px;
 border:1px solid #c9a227;
 border-radius:12px;
-padding:30px;
-text-align:center;
-color:white;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
 }
 
 .card h3{
 color:#c9a227;
-margin-bottom:15px;
-font-size:1.5rem;
+margin-bottom:10px;
 }
 
-/* CONTATO */
-
-#contato{
-padding:80px 20px;
-background:#f4f4f4;
+.orcamento{
 text-align:center;
 }
 
-#contato h2{
-font-size:2.5rem;
-margin-bottom:30px;
+.botao{
+display:inline-block;
+padding:15px 35px;
+background:#c9a227;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+margin-top:20px;
 }
 
-#contato p{
-margin:12px 0;
-font-size:1.1rem;
-}
+#contato{text-align:center}
 
 #contato a{
 color:#c9a227;
-font-weight:bold;
 text-decoration:none;
+font-weight:bold;
 }
-
-/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 background:#25D366;
-color:white;
-padding:14px 22px;
+color:#fff;
+padding:15px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-z-index:999;
 }
 
 footer{
-background:#050505;
-color:white;
+background:#111;
+color:#fff;
 text-align:center;
-padding:20px;
+padding:25px;
 }
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.2rem;
-}
-
-.subtitulo{
-font-size:1.3rem;
-}
-
-.logo{
-width:250px;
-}
-
-}
-
 </style>
 </head>
-
 <body>
 
 <header>
-
 <div class="hero">
-
-<img src="logo-surama.png" alt="SURAMA" class="logo">
-
-<h1>SURAMA</h1>
-
-<p class="subtitulo">
-Arquitetura • Esquadrias em Alumínio • Projetos Personalizados
-</p>
-
-<p class="destaque">
-Transformamos projetos em soluções completas, unindo arquitetura, técnica e execução.
-</p>
-
-<a href="#contato" class="botao">
-Solicitar Orçamento
-</a>
-
+<img src="logo-surama.png" class="logo" alt="SURAMA">
+<p>Arquitetura • Esquadrias em Alumínio • Projetos Personalizados</p>
 </div>
-
 </header>
 
-<section class="sobre">
-
+<section>
 <h2>Quem Somos</h2>
-
+<div class="sobre">
 <p>
-A SURAMA Arquitetura e Alumínio une experiência em obra, conhecimento técnico
-e compromisso com a qualidade. Atuamos com soluções completas em arquitetura,
-esquadrias de alumínio, fachadas, coberturas e manutenção especializada,
-sempre buscando funcionalidade, durabilidade e excelência em cada projeto.
+A SURAMA Arquitetura e Alumínio nasceu da união entre experiência em obra,
+conhecimento técnico e compromisso com a qualidade.
 </p>
-
+<br>
+<p>
+Atuamos no desenvolvimento de projetos arquitetônicos, fabricação e instalação
+de esquadrias em alumínio, fachadas, coberturas e manutenção especializada.
+</p>
+<br>
+<p>
+Cada projeto é executado com planejamento, precisão e atenção aos detalhes,
+oferecendo soluções duráveis e alinhadas às necessidades de cada cliente.
+</p>
+</div>
 </section>
 
 <section class="servicos-area">
-
 <h2>Nossos Serviços</h2>
 
 <div class="servicos">
@@ -287,42 +174,34 @@ sempre buscando funcionalidade, durabilidade e excelência em cada projeto.
 </div>
 
 </div>
+</section>
 
+<section class="orcamento">
+<h2>Solicite seu Orçamento</h2>
+<p>Entre em contato e receba atendimento personalizado para o seu projeto.</p>
+<a class="botao" href="https://wa.me/5511989265280" target="_blank">Solicitar Orçamento</a>
 </section>
 
 <section id="contato">
-
 <h2>Contato</h2>
 
-<p>
-WhatsApp:
-<a href="https://wa.me/5511989265280">
-(11) 98926-5280
-</a>
+<p>WhatsApp:
+<a href="https://wa.me/5511989265280">(11) 98926-5280</a>
 </p>
 
-<p>
-Instagram:
-<a href="https://instagram.com/surama_projetos">
-@surama_projetos
-</a>
+<p>Instagram:
+<a href="https://instagram.com/surama_projetos">@surama_projetos</a>
 </p>
 
-<p>
-E-mail:
-<a href="mailto:suramaprojetos@gmail.com">
-suramaprojetos@gmail.com
-</a>
+<p>E-mail:
+<a href="mailto:suramaprojetos@gmail.com">suramaprojetos@gmail.com</a>
 </p>
-
 </section>
 
-<a class="whatsapp" href="https://wa.me/5511989265280">
-WhatsApp
-</a>
+<a class="whatsapp" href="https://wa.me/5511989265280">WhatsApp</a>
 
 <footer>
-© 2026 SURAMA Arquitetura e Alumínio
+© 2026 SURAMA Arquitetura e Alumínio - Todos os direitos reservados.
 </footer>
 
 </body>
