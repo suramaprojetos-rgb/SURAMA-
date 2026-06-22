@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SURAMA Arquitetura e Alumínio</title>
 
 <style>
@@ -12,84 +10,48 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#f1ece3;
-color:#fff;
+background:#f3eee5;
 }
 
-.grid{
+.topo{
 display:grid;
 grid-template-columns:1fr 1fr;
 }
 
-.bloco{
-min-height:420px;
+.logo{
+background:#f3eee5;
 display:flex;
-flex-direction:column;
 justify-content:center;
+align-items:center;
 padding:50px;
 }
 
-.logo-area{
-background:#f1ece3;
-color:#222;
-text-align:center;
-}
-
-.logo-area img{
-max-width:260px;
+.logo img{
+max-width:320px;
 width:100%;
-margin:auto;
-display:block;
 }
 
-.imagem{
+.foto{
 background:url('WhatsApp Image 2026-06-08 at 09.30.35.jpeg');
 background-size:cover;
 background-position:center;
+min-height:500px;
 }
 
 .quem-somos{
 background:#0d2340;
-}
-
-.quem-somos h2{
-font-size:38px;
-margin-bottom:20px;
-font-weight:300;
-}
-
-.quem-somos p{
-line-height:1.9;
-font-size:18px;
+color:white;
+padding:50px;
 }
 
 .solucoes{
-background:#324663;
-}
-
-.solucoes h2{
-font-size:60px;
-font-weight:300;
-margin-bottom:20px;
-}
-
-.solucoes p{
-line-height:1.9;
-font-size:18px;
-}
-
-.contato-box{
-background:#0d2340;
-font-size:24px;
-}
-
-.contato-box p{
-margin-top:15px;
-font-size:18px;
+background:#32455f;
+color:white;
+padding:50px;
 }
 
 .servicos{
@@ -99,107 +61,44 @@ background:#0d2340;
 }
 
 .card{
-padding:35px 20px;
+padding:25px;
 text-align:center;
+color:white;
 border-right:1px solid #c9a227;
-}
-
-.card:last-child{
-border-right:none;
-}
-
-.card h3{
-color:#c9a227;
-font-size:16px;
-margin-bottom:12px;
-}
-
-.card p{
-font-size:14px;
-line-height:1.6;
 }
 
 .orcamento{
 background:#c9a227;
 text-align:center;
 padding:30px;
-color:#111;
-}
-
-.orcamento a{
-display:inline-block;
-margin-top:10px;
-padding:14px 30px;
-background:#0d2340;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
 }
 
 .rodape{
-background:#f1ece3;
-color:#333;
-padding:40px;
+background:#0d2340;
+color:white;
+padding:30px;
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+grid-template-columns:repeat(3,1fr);
+text-align:center;
 }
 
-.rodape h4{
-margin-bottom:10px;
-}
-
-.rodape a{
-color:#333;
-text-decoration:none;
-}
-
-footer{
-background:#111;
-color:#fff;
+.copy{
+background:#081527;
+color:white;
 text-align:center;
 padding:15px;
-font-size:14px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:14px 18px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-z-index:999;
 }
 
 @media(max-width:900px){
-
-.grid{
+.topo{
 grid-template-columns:1fr;
 }
-
 .servicos{
 grid-template-columns:1fr;
 }
-
 .rodape{
 grid-template-columns:1fr;
-text-align:center;
 }
-
-.solucoes h2{
-font-size:42px;
-}
-
-.bloco{
-padding:30px;
-min-height:auto;
-}
-
 }
 
 </style>
@@ -207,137 +106,29 @@ min-height:auto;
 
 <body>
 
-<div class="grid">
+<div class="topo">
 
-<div class="bloco logo-area">
+<div class="logo">
 <img src="logo-surama.png" alt="SURAMA">
 </div>
 
-<div class="bloco imagem"></div>
+<div class="foto"></div>
 
-<div class="bloco quem-somos">
-<h2>Quem somos</h2>
-
+<div class="quem-somos">
+<h2>Quem Somos</h2>
 <p>
-A SURAMA é uma empresa formada por três arquitetos,
-que une técnica, experiência em obra e compromisso com a qualidade.
-Atuamos com soluções completas em arquitetura e esquadrias de alumínio,
-desde o projeto até a fabricação e instalação.
-Cada trabalho é desenvolvido com planejamento,
-precisão e atenção aos detalhes, garantindo soluções funcionais,
-duráveis e alinhadas às necessidades de cada cliente.
+A SURAMA é uma empresa formada por três arquitetos que une técnica, experiência em obra e compromisso com a qualidade.
 </p>
-
 </div>
 
-<div class="bloco imagem"></div>
-
-<div class="bloco imagem"></div>
-
-<div class="bloco solucoes">
-
-<h2>Nossas soluções</h2>
-
+<div class="solucoes">
+<h2>Nossas Soluções</h2>
 <p>
-Desenvolvemos projetos arquitetônicos aplicados à fabricação,
-instalação e manutenção de esquadrias em alumínio.
-Todos os projetos são elaborados com embasamento técnico e normativo,
-atendendo às necessidades específicas de cada cliente e garantindo
-segurança, funcionalidade e qualidade na execução.
+Desenvolvemos projetos arquitetônicos aplicados à fabricação, instalação e manutenção de esquadrias em alumínio.
 </p>
-
 </div>
 
-<div class="bloco contato-box">
-
-<h3>Agende uma visita | Orçamentos</h3>
-
-<p>📱 (11) 98926-5280</p>
-
 </div>
-
-<div class="bloco imagem"></div>
-
-</div>
-
-<section class="servicos">
-
-<div class="card">
-<h3>ARQUITETURA</h3>
-<p>Projetos residenciais e comerciais personalizados.</p>
-</div>
-
-<div class="card">
-<h3>ESQUADRIAS EM ALUMÍNIO</h3>
-<p>Fabricação e instalação com acabamento profissional.</p>
-</div>
-
-<div class="card">
-<h3>FACHADAS</h3>
-<p>Soluções modernas para empreendimentos e residências.</p>
-</div>
-
-<div class="card">
-<h3>COBERTURAS</h3>
-<p>Estruturas resistentes e sob medida.</p>
-</div>
-
-<div class="card">
-<h3>MANUTENÇÃO DE ESQUADRIAS</h3>
-<p>Reparos, ajustes, vedação e manutenção preventiva.</p>
-</div>
-
-</section>
-
-<section class="orcamento">
-
-<h2>SOLICITAR ORÇAMENTO</h2>
-
-<p>Atendimento personalizado para seu projeto.</p>
-
-<a href="https://wa.me/5511989265280" target="_blank">
-Solicitar Orçamento
-</a>
-
-</section>
-
-<section class="rodape">
-
-<div>
-<h4>Projetos</h4>
-<p>Fabricação e Instalação</p>
-</div>
-
-<div>
-<h4>WhatsApp</h4>
-<p>(11) 98926-5280</p>
-</div>
-
-<div>
-<h4>Instagram</h4>
-<a href="https://instagram.com/surama_projetos">
-@surama_projetos
-</a>
-</div>
-
-<div>
-<h4>E-mail</h4>
-<a href="mailto:suramaprojetos@gmail.com">
-suramaprojetos@gmail.com
-</a>
-</div>
-
-</section>
-
-<footer>
-© 2026 SURAMA Arquitetura e Alumínio - Todos os direitos reservados.
-</footer>
-
-<a class="whatsapp"
-href="https://wa.me/5511989265280"
-target="_blank">
-WhatsApp
-</a>
 
 </body>
 </html>
