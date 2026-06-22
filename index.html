@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -30,7 +29,7 @@ line-height:1.6;
 
 header{
 background:
-linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)),
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
 url('WhatsApp Image 2026-06-08 at 09.30.35.jpeg');
 
 background-size:cover;
@@ -50,66 +49,63 @@ color:white;
 }
 
 .logo{
-width:380px;
+width:320px;
 max-width:90%;
 background:white;
 padding:15px;
 border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
-margin-bottom:35px;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
 }
 
 .subtitulo{
-font-size:2rem;
+font-size:1.8rem;
 font-weight:bold;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .destaque{
-font-size:1.3rem;
-max-width:850px;
-margin:auto;
-margin-bottom:40px;
+font-size:1.2rem;
+margin-bottom:35px;
 }
 
 .botao{
 display:inline-block;
-padding:16px 35px;
 background:#c9a227;
 color:white;
+padding:15px 35px;
 text-decoration:none;
-font-weight:bold;
-font-size:1.1rem;
 border-radius:8px;
+font-weight:bold;
 transition:.3s;
 }
 
 .botao:hover{
-transform:translateY(-3px);
-}
-
-/* SEÇÕES */
-
-section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
-font-size:2.5rem;
-text-align:center;
-margin-bottom:40px;
-color:#111;
+background:#b18f21;
 }
 
 /* SOBRE */
 
 .sobre{
-max-width:900px;
+padding:80px 20px;
+max-width:1200px;
 margin:auto;
 text-align:center;
+}
+
+.sobre h2{
+font-size:2.5rem;
+margin-bottom:30px;
+}
+
+.sobre p{
 font-size:1.1rem;
+max-width:900px;
+margin:auto;
 }
 
 /* SERVIÇOS */
@@ -120,7 +116,10 @@ padding:80px 20px;
 }
 
 .servicos-area h2{
+text-align:center;
 color:white;
+font-size:2.5rem;
+margin-bottom:50px;
 }
 
 .servicos{
@@ -149,16 +148,24 @@ transform:translateY(-5px);
 .card h3{
 color:#c9a227;
 margin-bottom:15px;
+font-size:1.5rem;
 }
 
 /* CONTATO */
 
 #contato{
+padding:80px 20px;
+background:#f4f4f4;
 text-align:center;
 }
 
+#contato h2{
+font-size:2.5rem;
+margin-bottom:30px;
+}
+
 #contato p{
-margin-bottom:15px;
+margin:12px 0;
 font-size:1.1rem;
 }
 
@@ -168,54 +175,40 @@ font-weight:bold;
 text-decoration:none;
 }
 
-/* FOOTER */
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-/* BOTÃO WHATSAPP */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
-
+bottom:20px;
 background:#25D366;
 color:white;
-
-padding:15px 20px;
+padding:14px 22px;
 border-radius:50px;
-
 text-decoration:none;
 font-weight:bold;
-
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-
 z-index:999;
 }
 
-/* RESPONSIVO */
+footer{
+background:#050505;
+color:white;
+text-align:center;
+padding:20px;
+}
 
 @media(max-width:768px){
 
-.logo{
-width:250px;
+.hero h1{
+font-size:2.2rem;
 }
 
 .subtitulo{
 font-size:1.3rem;
 }
 
-.destaque{
-font-size:1rem;
-}
-
-h2{
-font-size:2rem;
+.logo{
+width:250px;
 }
 
 }
@@ -230,6 +223,8 @@ font-size:2rem;
 <div class="hero">
 
 <img src="logo-surama.png" alt="SURAMA" class="logo">
+
+<h1>SURAMA</h1>
 
 <p class="subtitulo">
 Arquitetura • Esquadrias em Alumínio • Projetos Personalizados
@@ -247,66 +242,52 @@ Solicitar Orçamento
 
 </header>
 
-<section>
+<section class="sobre">
 
 <h2>Quem Somos</h2>
 
-<div class="sobre">
-
 <p>
-A SURAMA Arquitetura e Alumínio nasceu da união de profissionais comprometidos em entregar soluções completas para projetos residenciais, comerciais e corporativos.
+A SURAMA Arquitetura e Alumínio une experiência em obra, conhecimento técnico
+e compromisso com a qualidade. Atuamos com soluções completas em arquitetura,
+esquadrias de alumínio, fachadas, coberturas e manutenção especializada,
+sempre buscando funcionalidade, durabilidade e excelência em cada projeto.
 </p>
-
-<br>
-
-<p>
-Nossa atuação integra arquitetura, esquadrias em alumínio e acompanhamento técnico, garantindo qualidade, funcionalidade e excelência em cada etapa do processo.
-</p>
-
-<br>
-
-<p>
-Desenvolvemos projetos personalizados com foco na durabilidade, acabamento e satisfação de nossos clientes.
-</p>
-
-</div>
 
 </section>
 
 <section class="servicos-area">
 
+<h2>Nossos Serviços</h2>
 
-    <h2>Nossos Serviços</h2>
+<div class="servicos">
 
-    <div class="servicos">
+<div class="card">
+<h3>Arquitetura</h3>
+<p>Projetos residenciais e comerciais personalizados.</p>
+</div>
 
-        <div class="card">
-            <h3>Arquitetura</h3>
-            <p>Projetos residenciais e comerciais personalizados.</p>
-        </div>
+<div class="card">
+<h3>Esquadrias em Alumínio</h3>
+<p>Fabricação e instalação com acabamento profissional.</p>
+</div>
 
-        <div class="card">
-            <h3>Esquadrias em Alumínio</h3>
-            <p>Fabricação e instalação com acabamento profissional.</p>
-        </div>
+<div class="card">
+<h3>Fachadas</h3>
+<p>Soluções modernas para empreendimentos e residências.</p>
+</div>
 
-        <div class="card">
-            <h3>Fachadas</h3>
-            <p>Soluções modernas para empreendimentos e residências.</p>
-        </div>
+<div class="card">
+<h3>Coberturas</h3>
+<p>Estruturas resistentes e sob medida.</p>
+</div>
 
-        <div class="card">
-            <h3>Coberturas</h3>
-            <p>Estruturas resistentes e sob medida.</p>
-        </div>
+<div class="card">
+<h3>Manutenção de Esquadrias</h3>
+<p>Reparos, ajustes, vedação e manutenção preventiva de esquadrias de alumínio.</p>
+</div>
 
-        <div class="card">
-            <h3>Manutenção de Esquadrias</h3>
-            <p>Reparos, ajustes, vedação e manutenção preventiva de esquadrias de alumínio.</p>
+</div>
 
-    </div>
-
-</section>
 </section>
 
 <section id="contato">
@@ -315,14 +296,14 @@ Desenvolvemos projetos personalizados com foco na durabilidade, acabamento e sat
 
 <p>
 WhatsApp:
-<a href="https://wa.me/5511989265280" target="_blank">
+<a href="https://wa.me/5511989265280">
 (11) 98926-5280
 </a>
 </p>
 
 <p>
 Instagram:
-<a href="https://instagram.com/surama_projetos" target="_blank">
+<a href="https://instagram.com/surama_projetos">
 @surama_projetos
 </a>
 </p>
@@ -336,18 +317,13 @@ suramaprojetos@gmail.com
 
 </section>
 
-<footer>
-
-<p>© 2026 SURAMA Arquitetura e Alumínio</p>
-
-</footer>
-
-<a
-href="https://wa.me/5511989265280"
-target="_blank"
-class="whatsapp">
+<a class="whatsapp" href="https://wa.me/5511989265280">
 WhatsApp
 </a>
+
+<footer>
+© 2026 SURAMA Arquitetura e Alumínio
+</footer>
 
 </body>
 </html>
